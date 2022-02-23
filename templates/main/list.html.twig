@@ -1,0 +1,37 @@
+{% extends 'modele.html.twig' %}
+
+{% block titre %}
+List | {{ parent() }}
+{% endblock %}
+
+{% block main %}
+
+<div class="container">
+     <h1>Ma liste !</h1>
+     <div class="row">
+        <div class="col-8">
+        {# table>thead>tr>th*3 + TAB #}
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Activité</th>
+                    <th>Illustration</th>
+                </tr>
+            </thead>
+            {# tbody>tr>td*3 #}
+            <tbody>
+                <tr>
+                {% for b in bucket%}
+                    <td style="font-weight:bold; font-size:25px">{{ b.chose }}</td>
+                    <td> <img  width="300" height="150" src="{{ asset (b.img)}}"></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+         {# table>thead>tr>th*3^^tbody>tr>td*3 +TAB #}
+        </div>
+    </div>
+</div> 
+{% endblock main %} 
+
+

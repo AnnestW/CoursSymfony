@@ -1,0 +1,16 @@
+{% extends 'modele.html.twig' %}
+
+{% block titre %}
+Mon autographe | {{ parent() }}
+{% endblock %}
+
+{% block main %}
+
+<div class="container">
+      <img width="100" 
+    src="{{ asset ('img/plume.png')}}" alt="plume">
+     <img width="500" height="300" 
+    src="{{ asset ('img/autographe.png')}}" alt="autographe">
+  
+</div> 
+{% endblock main %} 
