@@ -15,7 +15,7 @@ class MainController extends AbstractController
     {
 
 
-        return $this->render('main/home.html.twig', [
+        return $this->render('main/about.html.twig', [
 
             'title' => "About us"
         ]);
@@ -41,7 +41,6 @@ class MainController extends AbstractController
             'title' => "List!"
         ]);
 
-        return $this->render('main/about.html.twig');
     }
 
     /**

@@ -1,0 +1,14 @@
+.logo /* png devient blanc */
+{
+    filter:  brightness(0) invert(1);
+}
+
+.bucket {
+    font-family: Helvetica, sans-serif;
+    color: blueviolet;
+    font-size: 60px;
+}
+
+body {
+    color:darkblue;
+}
